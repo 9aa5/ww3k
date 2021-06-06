@@ -48,7 +48,8 @@ function on_word_click(elem) {
    let word_value = elem.getAttribute('data-word');
    let google_query = 'https://www.google.com/search?q=define+' + word_value;
    console.log('clicked on word' + word_value);
-   window.open(google_query, 'google_dict');
+   window.open(google_query, 'popUpWindow',
+   'height=600,width=900,left=300,top=100,resizable=yes,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no, status=no');
 }
 
 function load_words(on_loaded) {
