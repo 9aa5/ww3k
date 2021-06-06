@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src='ww3k.js'></script>
+   </head>
+   <body onload='load_words();'>
+      <template id='word_link_template'>
+         <style>
+            span {
+               display: inline-block;
+               color: blue;
+               font-size: large;
+               margin: 10px 6px;
+               background-color: #F5F5DC;
+            }
+            span:hover {
+               text-decoration: underline;
+               cursor: pointer;
+            }
+         </style>
+         <span><slot name='word'>content missing</slot></span>
+      </template>
+      <div id='word_group_root'>
+      </div>
+   </body>
+</html>
